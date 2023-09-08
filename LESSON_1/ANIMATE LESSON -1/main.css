@@ -1,0 +1,58 @@
+body {
+  height: 100vh;
+  background-color: rgb(70, 70, 148);
+  display: grid;
+  place-items: center;
+}
+
+.boxes {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  background-color: rgb(209, 149, 209);
+}
+
+.box {
+  background-color: var(--bg);
+  width: 150px;
+  height: 150px;
+  transition: 2s linear transform;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+}
+.box1 {
+ 
+  left: 0;
+  top: 0;
+}
+.box2 {
+ 
+  right: 0;
+  top: 0;
+}
+.box3 {
+ 
+  right: 0;
+  bottom: 0;
+}
+.box4 {
+  
+  left: 0;
+  bottom: 0;
+}
+.boxes:hover{
+  .box1 {
+    transform: translateX(450px);
+  }
+  .box2 {
+    transform: translateY(450px);
+  }
+  .box3 {
+    transform: translateX(-450px);
+  }
+  .box4 {
+    transform: translateY(-450px);
+  }
+}
